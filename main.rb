@@ -1,15 +1,9 @@
 #!/usr/bin/env ruby
 
 class Input 
-  @@in = ""
-
   def self.prompt
     print "> "
-    @@in = gets.strip
-  end
-
-  def self.in 
-    return @@in 
+    return gets.strip
   end
 end
 
@@ -19,7 +13,7 @@ if __FILE__ == $0
   puts "(Type the number or name of the game you would like to start.)"
 
   loop do
-    case Input.prompt
+    case Input::prompt
       when "1", "tic-tac-toe"
         puts "TODO: starting tic-tac-toe..."
         break
