@@ -23,6 +23,8 @@ if __FILE__ == $0
       when "3", "TBD"
         puts "TODO: starting TBD..."
         break
+      else
+        puts "ERROR: Unrecognized command. Please try again."
     end
   end
 
