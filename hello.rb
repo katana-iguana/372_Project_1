@@ -1,62 +1,60 @@
-#!/usr/bin/ruby
-print "Hello Ruby!\n\n"
+#!/usr/bin/env ruby
 
-def displaystrings( *args )
-  args.each {|string| puts string}
-end
+# EXAMPLE -- unrelated to the actual project
 
-def multiply(val1, val2)
-  result = val1 * val2
-  return result
-end
+class MegaGreeter
+  attr_accessor :names
 
-class BankAccount
-  def initialize ()
+  # Create the object
+  def initialize(names = "World")
+    @names = names
   end
 
-  # class variable, like a static variable in Java
-  def interestRate
-    @@interestRate = 0.2
+  # Say hi to everybody
+  def say_hi
+    if @names.nil?
+      puts "..."
+    elsif @names.respond_to?("each")
+      # @names is a list of some kind, iterate!
+      @names.each do |name|
+        puts "Hello #{name}!"
+      end
+    else 
+      puts "Hello #{@names}!"
+    end
   end
 
-  def accountNumber
-    @accountNumber
-  end
-
-  def accountNumber=( value )
-    @accountNumber = value
-  end
-
-  def accountName
-    @accountName
-  end
-
-  def accountName=( value )
-    @accountName = value
-  end
-
-  def calc_interest ( balance )
-    puts balance * interestRate
-  end
-
-  def print
-    puts "name: " + @accountName
-    puts "num:  " + @accountNumber
-    calc_interest(1000)
+  # Say bye to everybody
+  def say_bye
+    if @names.nil?
+      puts "..."
+    elsif @names.respond_to?("join")
+      # Join the list elements with commas
+      puts "Goodbye #{@names.join(", ")}. Come back soon!"
+    else
+      puts "Goodbye #{@names}. Come back soon!"
+    end
   end
 end
 
-class NewBankAccount < BankAccount
-  def customerPhone
-    @customerPhone
-  end
+if __FILE__ == $0
+  mg = MegaGreeter.new
+  mg.say_hi
+  mg.say_bye
 
-  def customerPhone=( value )
-    @customerPhone = value
-  end
+  # Change name to be "Zeke"
+  mg.names = "Zeke"
+  mg.say_hi
+  mg.say_bye
+
+  # Change the name to an array of names
+  mg.names = ["Albert", "Brenda", "Charles",
+              "Dave", "Engelbert"]
+  mg.say_hi
+  mg.say_bye
+
+  # Change to nil
+  mg.names = nil
+  mg.say_hi
+  mg.say_bye
 end
-
-account = BankAccount.new()
-account.accountName = "Fred Flintstone"
-account.accountNumber = "54321"
-account.print
