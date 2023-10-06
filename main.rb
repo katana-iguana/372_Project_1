@@ -15,13 +15,13 @@ if __FILE__ == $0
   loop do
     case Input::prompt
       when "1", "tic-tac-toe"
-        puts "TODO: starting tic-tac-toe..."
-        break
+        puts "Starting tic-tac-toe...\n\n"
+        exec "ruby tic_tac_toe.rb"
       when "2", "wordle"
-        puts "TODO: starting wordle..."
-        break
+        puts "Starting wordle...\n\n"
+        exec "ruby wordle.rb"
       when "3", "TBD"
-        puts "TODO: starting TBD..."
+        puts "Starting TBD..."
         break
       else
         puts "ERROR: Unrecognized command. Please try again."
