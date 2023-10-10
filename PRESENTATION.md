@@ -63,6 +63,15 @@ class Question
 end
 ```
 
+A "block" which, for each line of a file, creates a Question object using the information in that line (can be found in `quiz.rb`):
+
+```ruby
+File.foreach('questions.txt') do |line|
+  line = line.chomp.split('#')
+  questions.push(Question.new(line))
+end
+```
+
 A loop which repeatedly asks the user to enter the game they want to play, before switching to that sub-program (can be found in `main.rb`):
 
 ```ruby
