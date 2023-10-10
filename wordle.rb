@@ -125,9 +125,9 @@ def run_game(words_list)
             end
         end
     end
-    puts "Would you like to play again? (Y/n)"
+    puts "Would you like to play again? (y/N)"
     play_again = gets.strip
-    if play_again == "Y"
+    if play_again == "y"
         puts
         run_game(words_list)
     end
