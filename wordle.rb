@@ -4,9 +4,13 @@ def read_words()
 end
 
 def instructions()
-    puts "Would you like to read the instructions? (Y/n)"
-    answer = gets.strip
-    if answer == "Y"
+    puts "Would you like to read the instructions? (y/N)"
+    input = gets
+    if input.nil?
+      return
+    end
+    answer = input.strip
+    if answer == "y"
         puts
         puts "WORDLE is a word-guessing game. For every round, a random five-letter\nword is chosen. You have to guess the word in 6 guesses. You cannot\nguess words you have guessed before, and every word must be a word\nin our dictionary. Below is an example of output if the actual word\nis \"yerba\" and the guess is \"kelpy\"."
         puts " --- --- --- --- --- "
@@ -87,7 +91,6 @@ def run_game(words_list)
     while true    
         puts "Please enter a your guess"
         guess = gets.strip.downcase
-        #guess = guess.downcase
         if valid_word(guess, words_list, guessed_words_list)
             guesses += 1
             guessed_words_list.append(guess)
@@ -118,7 +121,7 @@ def run_game(words_list)
 end
 
 def main()
-    puts "----Welcome to WORDLE----"
+    puts "---- Welcome to WORDLE ----"
     read_words()
     file_data =  read_words()
     instructions()
@@ -129,8 +132,3 @@ def main()
 end
 
 main()
-
-
-
-
-

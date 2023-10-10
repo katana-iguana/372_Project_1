@@ -1,0 +1,10 @@
+What kind of programming language is Ruby?#Object-oriented, dynamically typed#Object-oriented, statically typed#All of the above#None of the above#a
+Which of the following is an object in Ruby?#Integer#String#Array#All of the above#d
+Names which start with @@ denote which kind of variables?#Local variables#Global variables#Class variables#Instance variables#c
+Names which start with @ denote which kind of variables#Local variables#Global variables#Class variables#Instance variables#d
+Names which start with $ denote which kind of variables?#Local variables#Global variables#Class variables#Instance variables#b
+Which of the following is supported by Ruby?#Dynamic typing#Automatic memory management#Multiple programming paradigms#All of the above#d
+What does the following expression evaluate to?    "he" + 110#An error is raised#"he110"#"hello"#None of the above#a
+How could you get the first character of a String stored in the local variable `data`?#data[0]#data.chars.first#data.chr#All of the above#d
+Who is the creator of Ruby?#Bram Moolenaar#Yukihiro "Matz" Matsumoto#Bjarne Stroustrup#Alan Turing#b
+Does Ruby support duck typing? If so, what is it?#Yes. An object's set of methods and properties determine the valid semantics concerning its usage#Yes. If an object is a duck, its type must be declared by the code#Yes. It is impossible to tell whether an object implements any given method#No#a
