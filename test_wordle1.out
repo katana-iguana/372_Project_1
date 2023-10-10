@@ -1,0 +1,58 @@
+---- Welcome to WORDLE ----
+Would you like to read the instructions? (y/N)
+
+WORDLE is a word-guessing game. For every round, a random five-letter
+word is chosen. You have to guess the word in 6 guesses. You cannot
+guess words you have guessed before, and every word must be a word
+in our dictionary. Below is an example of output if the actual word
+is "yerba" and the guess is "kelpy".
+ --- --- --- --- --- 
+| k | e | l | p | y |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | C | X | X | I |
+ --- --- --- --- --- 
+"C" in the corresponding box below means the letter in the guess is
+in the correct spot. "I" means that the letter is in the word, but 
+not in the right spot. "X" means the letter is not in the word.
+
+Please enter your guess
+ --- --- --- --- --- 
+| h | e | l | l | o |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | I |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| w | h | i | c | h |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | X |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| w | h | e | r | e |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | C | X |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| p | u | p | a | l |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | I | X | X | X |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| t | h | e | i | r |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | I |
+ --- --- --- --- --- 
+Please enter your guess
+You did not guess the word in 6 guesses.
+The word was yours
+Would you like to play again? (y/N)
+Thanks for playing WORDLE!

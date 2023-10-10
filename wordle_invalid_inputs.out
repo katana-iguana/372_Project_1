@@ -1,0 +1,51 @@
+---- Welcome to WORDLE ----
+Would you like to read the instructions? (y/N)
+Yay! You already know how to play. Let's start the game!
+Please enter your guess
+Invalid guess. Guess must be a 5 letters long.
+Please enter your guess
+Invaid guess. All characters in your guess must be alphabetic.
+Please enter your guess
+Invalid guess. Guess not found in dictionary.
+Please enter your guess
+ --- --- --- --- --- 
+| h | e | l | l | o |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | I |
+ --- --- --- --- --- 
+Please enter your guess
+Invalid guess. You already guessed this word.
+Please enter your guess
+ --- --- --- --- --- 
+| a | g | a | i | n |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | I | X |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| g | r | e | a | t |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | C |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| w | o | u | l | d |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | C | X | X | X |
+ --- --- --- --- --- 
+Please enter your guess
+ --- --- --- --- --- 
+| p | a | p | e | r |
+ --- --- --- --- --- 
+ --- --- --- --- --- 
+| X | X | X | X | X |
+ --- --- --- --- --- 
+Please enter your guess
+You did not guess the word in 6 guesses.
+The word was joist
+Would you like to play again? (y/N)
+Thanks for playing WORDLE!

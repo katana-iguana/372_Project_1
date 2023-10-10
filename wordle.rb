@@ -1,4 +1,10 @@
 =begin
+    File: wordle.rb
+    Author: Katana Bierman
+    Purpose: This file runs a wordle-like game through the command-line.
+=end
+
+=begin
     This function reads the word dictionary file data to create an array
     of words. It returns this array.
 =end
@@ -31,6 +37,8 @@ def instructions()
         puts " --- --- --- --- --- "
         puts "\"C\" in the corresponding box below means the letter in the guess is\nin the correct spot. \"I\" means that the letter is in the word, but \nnot in the right spot. \"X\" means the letter is not in the word."
         puts
+    else
+        puts "Yay! You already know how to play. Let's start the game!"
     end 
 end
 
@@ -104,7 +112,7 @@ def run_game(words_list)
     rand_word = words_list[rand(words_list.length)]
     # game loop
     while true    
-        puts "Please enter a your guess"
+        puts "Please enter your guess"
         guess = gets.strip.downcase
         if valid_word(guess, words_list, guessed_words_list)
             guesses += 1
@@ -139,9 +147,7 @@ def main()
     file_data =  read_words()
     instructions()
     run_game(file_data)    
-    puts "Thanks for playing WORDLE! Returning to main menu..."
-    puts
-    exec "ruby main.rb"
+    puts "Thanks for playing WORDLE!"
 end
 
 main()
