@@ -1,0 +1,86 @@
+---- Welcome to RUBY QUIZ ----
+
+What kind of programming language is Ruby?
+  a) Object-oriented, dynamically typed
+  b) Object-oriented, statically typed
+  c) All of the above
+  d) None of the above
+
+Your answer (a, b, c, d): CORRECT! Your score is: 1/10
+
+Which of the following is an object in Ruby?
+  a) Integer
+  b) String
+  c) Array
+  d) All of the above
+
+Your answer (a, b, c, d): CORRECT! Your score is: 2/10
+
+Names which start with @@ denote which kind of variables?
+  a) Local variables
+  b) Global variables
+  c) Class variables
+  d) Instance variables
+
+Your answer (a, b, c, d): CORRECT! Your score is: 3/10
+
+Names which start with @ denote which kind of variables
+  a) Local variables
+  b) Global variables
+  c) Class variables
+  d) Instance variables
+
+Your answer (a, b, c, d): CORRECT! Your score is: 4/10
+
+Names which start with $ denote which kind of variables?
+  a) Local variables
+  b) Global variables
+  c) Class variables
+  d) Instance variables
+
+Your answer (a, b, c, d): CORRECT! Your score is: 5/10
+
+Which of the following is supported by Ruby?
+  a) Dynamic typing
+  b) Automatic memory management
+  c) Multiple programming paradigms
+  d) All of the above
+
+Your answer (a, b, c, d): CORRECT! Your score is: 6/10
+
+What does the following expression evaluate to?    "he" + 110
+  a) An error is raised
+  b) "he110"
+  c) "hello"
+  d) None of the above
+
+Your answer (a, b, c, d): CORRECT! Your score is: 7/10
+
+How could you get the first character of a String stored in the local variable `data`?
+  a) data[0]
+  b) data.chars.first
+  c) data.chr
+  d) All of the above
+
+Your answer (a, b, c, d): CORRECT! Your score is: 8/10
+
+Who is the creator of Ruby?
+  a) Bram Moolenaar
+  b) Yukihiro "Matz" Matsumoto
+  c) Bjarne Stroustrup
+  d) Alan Turing
+
+Your answer (a, b, c, d): CORRECT! Your score is: 9/10
+
+Does Ruby support duck typing? If so, what is it?
+  a) Yes. An object's set of methods and properties determine the valid semantics concerning its usage
+  b) Yes. If an object is a duck, its type must be declared by the code
+  c) Yes. It is impossible to tell whether an object implements any given method
+  d) No
+
+Your answer (a, b, c, d): CORRECT! Your score is: 10/10
+
+PERFECT SCORE! Good job!
+
+Thanks for playing RUBY QUIZ!
+

@@ -74,8 +74,7 @@ def main()
   puts "---- Welcome to RUBY QUIZ ----\n\n"
   quiz = Quiz.new
   quiz.play
-  puts "Thanks for playing RUBY QUIZ! Returning to main menu...\n\n"
-  exec "ruby main.rb"
+  puts "Thanks for playing RUBY QUIZ!\n\n"
 end
 
 if __FILE__ == $0

@@ -24,4 +24,4 @@ ruby main.rb
 
 ### Testing
 
-TODO
+See the `tests/` for input files and expected outputs.
