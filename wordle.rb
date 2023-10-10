@@ -1,8 +1,17 @@
+=begin
+    This function reads the word dictionary file data to create an array
+    of words. It returns this array.
+=end
 def read_words()
     data = File.read("words.txt").split
     return data
 end
 
+=begin
+    This function prompts the user to ask if they would like to read the 
+    game instructions. If yes, then the instructions to the game are 
+    displayed.
+=end
 def instructions()
     puts "Would you like to read the instructions? (y/N)"
     input = gets
@@ -10,6 +19,7 @@ def instructions()
       return
     end
     answer = input.strip
+    # display instructions if user wants to see them
     if answer == "y"
         puts
         puts "WORDLE is a word-guessing game. For every round, a random five-letter\nword is chosen. You have to guess the word in 6 guesses. You cannot\nguess words you have guessed before, and every word must be a word\nin our dictionary. Below is an example of output if the actual word\nis \"yerba\" and the guess is \"kelpy\"."
@@ -50,9 +60,13 @@ def valid_word(guess, words_list, guessed_words_list)
     end
 end
 
+=begin
+    This function iterates through the guess and compares the letters to that
+    of the word. It displays information regarding the player's accuracy to
+    the actual word.
+=end
 def correct_letters(word, guess)
-
-    
+    # output display of word
     puts " --- --- --- --- --- "
     guess.each_char { |char|
         print "| #{char} "
@@ -63,6 +77,7 @@ def correct_letters(word, guess)
     puts " --- --- --- --- --- "
     index = 0
     already_in_word = Array.new
+    # loop through comparing guess to word
     while index < 5
         if word[index] == guess[index]
             print "| C "
@@ -87,7 +102,7 @@ def run_game(words_list)
     guessed_words_list = Array.new
     guesses = 0
     rand_word = words_list[rand(words_list.length)]
-    #puts "word to guess: " + rand_word #FOR TESTING; DELETE LATER
+    # game loop
     while true    
         puts "Please enter a your guess"
         guess = gets.strip.downcase
@@ -108,8 +123,6 @@ def run_game(words_list)
             else
                 correct_letters(rand_word, guess)
             end
-        #else
-        #    puts "Invalid word. Please enter a new guess"
         end
     end
     puts "Would you like to play again? (Y/n)"
