@@ -1,5 +1,7 @@
 # Summary Presentation
 
+Evan Ohme, Katana Bierman, Brooke Adkins
+
 ## Program Description 
 
 Our program is a command-line application where the user can pick from three games to play. The program uses the file I/O and object-oriented programming features of Ruby to implement Wordle, Tic-Tac-Toe, and a Ruby Trivia Quiz. 

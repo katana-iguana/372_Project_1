@@ -1,6 +1,10 @@
 =begin
   quiz.rb
-  Author: Evan Ohme
+
+  Author:  Evan Ohme
+  Course:  CSc372, Fall '23
+  Purpose: A short multiple-choice quiz to test your knowledge
+           on the Ruby programming language!
 =end
 
 class Question
@@ -8,6 +12,8 @@ class Question
     @question, @opt1, @opt2, @opt3, @opt4, @ans = line
   end
 
+  # Ask this question; print it out and get the answer as input
+  # Returns: true if the user answered correctly, false if not
   def ask()
     puts @question
     puts "  a) #{@opt1}"
@@ -35,6 +41,7 @@ class Quiz
     @num_questions = @questions.length
   end
 
+  # Play this quiz; loop through each question and ask it
   def play()
     @questions.each do |q|
       # ask a question, add to @score if the user answers correctly
@@ -52,6 +59,7 @@ class Quiz
     end
   end
 
+  # Read the quiz questions from a text file
   def get_questions()
     questions = Array::new
     File.foreach('questions.txt') do |line|
