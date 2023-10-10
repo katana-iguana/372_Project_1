@@ -28,6 +28,7 @@ end
     it has not been guessed before.
 =end
 def valid_word(guess, words_list, guessed_words_list)
+    
     if guess.length != 5
         puts "Invalid guess. Guess must be a 5 letters long."
         return false
@@ -85,8 +86,8 @@ def run_game(words_list)
     #puts "word to guess: " + rand_word #FOR TESTING; DELETE LATER
     while true    
         puts "Please enter a your guess"
-        guess = gets.strip
-        guess = guess.downcase
+        guess = gets.strip.downcase
+        #guess = guess.downcase
         if valid_word(guess, words_list, guessed_words_list)
             guesses += 1
             guessed_words_list.append(guess)
