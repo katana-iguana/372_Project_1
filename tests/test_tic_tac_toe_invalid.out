@@ -1,0 +1,47 @@
+---- Welcome to RUBY TIC TAC TOE ----
+
+These are the rows and cols for the game board
+Please type in the row,col to place an 'X'
+
+            (0,0)  (0,1)  (0,2) 
+            (1,0)  (1,1)  (1,2) 
+            (2,0)  (2,1)  (2,2) 
+
+
+                  _  _  _ 
+                  _  _  _ 
+                  _  _  _ 
+
+
+3,3
+No, '(3,3)' is not in the game board positions.
+Please type in a new coordinate
+6,6
+No, '(6,6)' is not in the game board positions.
+Please type in a new coordinate
+0,9
+No, '(0,9)' is not in the game board positions.
+Please type in a new coordinate
+2,4
+No, '(2,4)' is not in the game board positions.
+Please type in a new coordinate
+0,0
+                  X  _  O 
+                  _  _  _ 
+                  _  _  _ 
+
+
+1,1
+                  X  _  O 
+                  _  X  _ 
+                  O  _  _ 
+
+
+2,2
+                  X  _  O 
+                  _  X  _ 
+                  O  _  X 
+
+
+You won!
+Thanks for playing tic tac toe! Returning to the main menu...
